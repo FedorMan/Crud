@@ -1,0 +1,549 @@
+2018-01-30 16:16:32.032  INFO 18021 --- [restartedMain] com.examplecrud.demo.DemoApplication     : Starting DemoApplication on SMRPC00891 with PID 18021 (started by fedor in /home/fedor/Документы/Altarix/crud)
+2018-01-30 16:16:32.034  INFO 18021 --- [restartedMain] com.examplecrud.demo.DemoApplication     : No active profile set, falling back to default profiles: default
+2018-01-30 16:16:32.127  INFO 18021 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@664656bf: startup date [Tue Jan 30 16:16:32 SAMT 2018]; root of context hierarchy
+2018-01-30 16:16:33.053  WARN 18021 --- [restartedMain] o.s.c.a.ConfigurationClassPostProcessor  : Cannot enhance @Configuration bean definition 'com.vaadin.spring.VaadinConfiguration' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+2018-01-30 16:16:33.392  INFO 18021 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$2bb4157] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-30 16:16:34.252  INFO 18021 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8090 (http)
+2018-01-30 16:16:34.263  INFO 18021 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-01-30 16:16:34.264  INFO 18021 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-01-30 16:16:34.326  INFO 18021 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-01-30 16:16:34.326  INFO 18021 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2201 ms
+2018-01-30 16:16:34.504  INFO 18021 --- [localhost-startStop-1] c.v.s.b.i.VaadinServletConfiguration     : Registering Vaadin servlet
+2018-01-30 16:16:34.504  INFO 18021 --- [localhost-startStop-1] c.v.s.b.i.VaadinServletConfiguration     : Servlet will be mapped to URLs [/vaadinServlet/*, /VAADIN/*]
+2018-01-30 16:16:34.541  INFO 18021 --- [localhost-startStop-1] c.v.s.b.i.VaadinServletConfiguration     : Setting servlet init parameters
+2018-01-30 16:16:34.541  INFO 18021 --- [localhost-startStop-1] c.v.s.b.i.VaadinServletConfiguration     : Set servlet init parameter [productionMode] = [false]
+2018-01-30 16:16:34.541  INFO 18021 --- [localhost-startStop-1] c.v.s.b.i.VaadinServletConfiguration     : Set servlet init parameter [resourceCacheTime] = [3600]
+2018-01-30 16:16:34.542  INFO 18021 --- [localhost-startStop-1] c.v.s.b.i.VaadinServletConfiguration     : Set servlet init parameter [heartbeatInterval] = [300]
+2018-01-30 16:16:34.543  INFO 18021 --- [localhost-startStop-1] c.v.s.b.i.VaadinServletConfiguration     : Set servlet init parameter [closeIdleSessions] = [false]
+2018-01-30 16:16:34.604  INFO 18021 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-30 16:16:34.605  INFO 18021 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'springVaadinServlet' to [/vaadinServlet/*, /VAADIN/*]
+2018-01-30 16:16:34.607  INFO 18021 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-30 16:16:34.608  INFO 18021 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-30 16:16:34.608  INFO 18021 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-30 16:16:34.608  INFO 18021 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-30 16:16:34.973  WARN 18021 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Cannot deserialize session attribute [com.vaadin.server.VaadinSession.springVaadinServlet] for session [BD4674A01E3D9FC0308BAAF8F623CD86]
+2018-01-30 16:16:36.086  INFO 18021 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@664656bf: startup date [Tue Jan 30 16:16:32 SAMT 2018]; root of context hierarchy
+2018-01-30 16:16:36.195  INFO 18021 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/documents],methods=[GET]}" onto public java.util.List<com.examplecrud.demo.entity.Document> com.examplecrud.demo.controller.DocumentController.getAll()
+2018-01-30 16:16:36.196  INFO 18021 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/documents],methods=[PUT]}" onto public com.examplecrud.demo.entity.Document com.examplecrud.demo.controller.DocumentController.update(java.lang.String)
+2018-01-30 16:16:36.197  INFO 18021 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/documents/{id}],methods=[GET]}" onto public com.examplecrud.demo.entity.Document com.examplecrud.demo.controller.DocumentController.read(java.lang.String)
+2018-01-30 16:16:36.198  INFO 18021 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/documents/{id}],methods=[DELETE]}" onto public java.util.UUID com.examplecrud.demo.controller.DocumentController.delete(java.lang.String)
+2018-01-30 16:16:36.199  INFO 18021 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/documents],methods=[POST],consumes=[application/json]}" onto public com.examplecrud.demo.entity.Document com.examplecrud.demo.controller.DocumentController.create(java.lang.String)
+2018-01-30 16:16:36.203  INFO 18021 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-30 16:16:36.204  INFO 18021 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-30 16:16:36.275  INFO 18021 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-30 16:16:36.275  INFO 18021 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-30 16:16:36.346  INFO 18021 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-30 16:16:36.412  INFO 18021 --- [restartedMain] c.v.s.b.i.VaadinServletConfiguration     : Checking the application context for Vaadin UI mappings
+2018-01-30 16:16:36.414  INFO 18021 --- [restartedMain] c.v.s.b.i.VaadinServletConfiguration     : Registering Vaadin servlet of type [com.vaadin.spring.server.SpringVaadinServlet]
+2018-01-30 16:16:36.421  INFO 18021 --- [restartedMain] c.v.s.b.i.VaadinServletConfiguration     : Forwarding @SpringUI URLs from {/=org.springframework.web.servlet.mvc.ServletForwardingController@35a91b25}
+2018-01-30 16:16:36.422  INFO 18021 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Root mapping to handler of type [class org.springframework.web.servlet.mvc.ServletForwardingController]
+2018-01-30 16:16:36.807  INFO 18021 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-01-30 16:16:36.892  INFO 18021 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-01-30 16:16:36.946  INFO 18021 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8090 (http)
+2018-01-30 16:16:36.956  INFO 18021 --- [restartedMain] com.examplecrud.demo.DemoApplication     : Started DemoApplication in 5.215 seconds (JVM running for 5.673)
+2018-01-30 16:17:21.195  INFO 18021 --- [http-nio-8090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-01-30 16:17:21.195  INFO 18021 --- [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-01-30 16:17:21.216  INFO 18021 --- [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 21 ms
+2018-01-30 16:17:21.235  WARN 18021 --- [http-nio-8090-exec-1] c.v.s.DefaultDeploymentConfiguration     : 
+=================================================================
+Vaadin is running in DEBUG MODE.
+Add productionMode=true to web.xml to disable debug features.
+To show debug window, add ?debug to your application URL.
+=================================================================
+2018-01-30 16:17:21.254  INFO 18021 --- [http-nio-8090-exec-1] c.vaadin.spring.server.SpringUIProvider  : Checking the application context for Vaadin UIs
+2018-01-30 16:17:21.256  INFO 18021 --- [http-nio-8090-exec-1] c.vaadin.spring.server.SpringUIProvider  : Found Vaadin UI [com.examplecrud.demo.ui.VaadinUI]
+2018-01-30 16:17:21.827  INFO 18021 --- [http-nio-8090-exec-2] c.v.spring.navigator.SpringViewProvider  : Looking up SpringViews
+2018-01-30 16:17:21.832  WARN 18021 --- [http-nio-8090-exec-2] c.v.spring.navigator.SpringViewProvider  : No SpringViews found
+2018-01-30 16:17:21.924  INFO 18021 --- [http-nio-8090-exec-2] com.examplecrud.demo.aop.LogerAspect     : start method: List com.examplecrud.demo.service.DocumentService.findAll() arguments: [Ljava.lang.Object;@6d779020
+2018-01-30 16:17:34.592  INFO 18021 --- [http-nio-8090-exec-9] com.examplecrud.demo.aop.LogerAspect     : start method: Document com.examplecrud.demo.service.DocumentService.read(UUID) arguments: [Ljava.lang.Object;@75b7cced
+2018-01-30 16:19:45.046  INFO 18021 --- [http-nio-8090-exec-2] com.examplecrud.demo.aop.LogerAspect     : start method: Document com.examplecrud.demo.service.DocumentService.save(Document) arguments: [Ljava.lang.Object;@6e7e0a80
+2018-01-30 16:19:45.056  INFO 18021 --- [http-nio-8090-exec-2] com.examplecrud.demo.aop.LogerAspect     : start method: List com.examplecrud.demo.service.DocumentService.findAll() arguments: [Ljava.lang.Object;@ef9c421
+2018-01-30 16:20:55.323  INFO 18021 --- [Thread-9] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@664656bf: startup date [Tue Jan 30 16:16:32 SAMT 2018]; root of context hierarchy
+2018-01-30 16:20:55.331  INFO 18021 --- [Thread-9] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-01-30 16:21:01.880  INFO 18440 --- [restartedMain] com.examplecrud.demo.DemoApplication     : Starting DemoApplication on SMRPC00891 with PID 18440 (started by fedor in /home/fedor/Документы/Altarix/crud)
+2018-01-30 16:21:01.881  INFO 18440 --- [restartedMain] com.examplecrud.demo.DemoApplication     : No active profile set, falling back to default profiles: default
+2018-01-30 16:21:01.941  INFO 18440 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@55f3b52: startup date [Tue Jan 30 16:21:01 SAMT 2018]; root of context hierarchy
+2018-01-30 16:21:02.965  WARN 18440 --- [restartedMain] o.s.c.a.ConfigurationClassPostProcessor  : Cannot enhance @Configuration bean definition 'com.vaadin.spring.VaadinConfiguration' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+2018-01-30 16:21:03.249  INFO 18440 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$3bf568a8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-30 16:21:03.839  INFO 18440 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8090 (http)
+2018-01-30 16:21:03.851  INFO 18440 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-01-30 16:21:03.852  INFO 18440 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-01-30 16:21:03.923  INFO 18440 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-01-30 16:21:03.924  INFO 18440 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1985 ms
+2018-01-30 16:21:04.124  INFO 18440 --- [localhost-startStop-1] c.v.s.b.i.VaadinServletConfiguration     : Registering Vaadin servlet
+2018-01-30 16:21:04.125  INFO 18440 --- [localhost-startStop-1] c.v.s.b.i.VaadinServletConfiguration     : Servlet will be mapped to URLs [/vaadinServlet/*, /VAADIN/*]
+2018-01-30 16:21:04.165  INFO 18440 --- [localhost-startStop-1] c.v.s.b.i.VaadinServletConfiguration     : Setting servlet init parameters
+2018-01-30 16:21:04.165  INFO 18440 --- [localhost-startStop-1] c.v.s.b.i.VaadinServletConfiguration     : Set servlet init parameter [productionMode] = [false]
+2018-01-30 16:21:04.166  INFO 18440 --- [localhost-startStop-1] c.v.s.b.i.VaadinServletConfiguration     : Set servlet init parameter [resourceCacheTime] = [3600]
+2018-01-30 16:21:04.166  INFO 18440 --- [localhost-startStop-1] c.v.s.b.i.VaadinServletConfiguration     : Set servlet init parameter [heartbeatInterval] = [300]
+2018-01-30 16:21:04.166  INFO 18440 --- [localhost-startStop-1] c.v.s.b.i.VaadinServletConfiguration     : Set servlet init parameter [closeIdleSessions] = [false]
+2018-01-30 16:21:04.215  INFO 18440 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-30 16:21:04.216  INFO 18440 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'springVaadinServlet' to [/vaadinServlet/*, /VAADIN/*]
+2018-01-30 16:21:04.218  INFO 18440 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-30 16:21:04.219  INFO 18440 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-30 16:21:04.219  INFO 18440 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-30 16:21:04.219  INFO 18440 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-30 16:21:04.399  WARN 18440 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Cannot deserialize session attribute [com.vaadin.server.VaadinSession.springVaadinServlet] for session [BD4674A01E3D9FC0308BAAF8F623CD86]
+2018-01-30 16:21:05.382  INFO 18440 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@55f3b52: startup date [Tue Jan 30 16:21:01 SAMT 2018]; root of context hierarchy
+2018-01-30 16:21:05.462  INFO 18440 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/documents],methods=[GET]}" onto public java.util.List<com.examplecrud.demo.entity.Document> com.examplecrud.demo.controller.DocumentController.getAll()
+2018-01-30 16:21:05.463  INFO 18440 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/documents],methods=[PUT]}" onto public com.examplecrud.demo.entity.Document com.examplecrud.demo.controller.DocumentController.update(java.lang.String)
+2018-01-30 16:21:05.463  INFO 18440 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/documents/{id}],methods=[GET]}" onto public com.examplecrud.demo.entity.Document com.examplecrud.demo.controller.DocumentController.read(java.lang.String)
+2018-01-30 16:21:05.463  INFO 18440 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/documents/{id}],methods=[DELETE]}" onto public java.util.UUID com.examplecrud.demo.controller.DocumentController.delete(java.lang.String)
+2018-01-30 16:21:05.464  INFO 18440 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/documents],methods=[POST],consumes=[application/json]}" onto public com.examplecrud.demo.entity.Document com.examplecrud.demo.controller.DocumentController.create(java.lang.String)
+2018-01-30 16:21:05.466  INFO 18440 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-30 16:21:05.467  INFO 18440 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-30 16:21:05.521  INFO 18440 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-30 16:21:05.521  INFO 18440 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-30 16:21:05.562  INFO 18440 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-30 16:21:05.598  INFO 18440 --- [restartedMain] c.v.s.b.i.VaadinServletConfiguration     : Checking the application context for Vaadin UI mappings
+2018-01-30 16:21:05.604  INFO 18440 --- [restartedMain] c.v.s.b.i.VaadinServletConfiguration     : Registering Vaadin servlet of type [com.vaadin.spring.server.SpringVaadinServlet]
+2018-01-30 16:21:05.610  INFO 18440 --- [restartedMain] c.v.s.b.i.VaadinServletConfiguration     : Forwarding @SpringUI URLs from {/=org.springframework.web.servlet.mvc.ServletForwardingController@10dfa0da}
+2018-01-30 16:21:05.611  INFO 18440 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Root mapping to handler of type [class org.springframework.web.servlet.mvc.ServletForwardingController]
+2018-01-30 16:21:05.892  INFO 18440 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-01-30 16:21:05.958  INFO 18440 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-01-30 16:21:06.019  INFO 18440 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8090 (http)
+2018-01-30 16:21:06.024  INFO 18440 --- [restartedMain] com.examplecrud.demo.DemoApplication     : Started DemoApplication in 4.423 seconds (JVM running for 4.955)
+2018-01-30 16:21:13.320  WARN 18440 --- [http-nio-8090-exec-1] c.v.s.DefaultDeploymentConfiguration     : 
+=================================================================
+Vaadin is running in DEBUG MODE.
+Add productionMode=true to web.xml to disable debug features.
+To show debug window, add ?debug to your application URL.
+=================================================================
+2018-01-30 16:21:18.078  INFO 18440 --- [http-nio-8090-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-01-30 16:21:18.079  INFO 18440 --- [http-nio-8090-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-01-30 16:21:18.115  INFO 18440 --- [http-nio-8090-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 35 ms
+2018-01-30 16:21:18.125  INFO 18440 --- [http-nio-8090-exec-2] c.vaadin.spring.server.SpringUIProvider  : Checking the application context for Vaadin UIs
+2018-01-30 16:21:18.127  INFO 18440 --- [http-nio-8090-exec-2] c.vaadin.spring.server.SpringUIProvider  : Found Vaadin UI [com.examplecrud.demo.ui.VaadinUI]
+2018-01-30 16:21:18.660  INFO 18440 --- [http-nio-8090-exec-5] c.v.spring.navigator.SpringViewProvider  : Looking up SpringViews
+2018-01-30 16:21:18.662  WARN 18440 --- [http-nio-8090-exec-5] c.v.spring.navigator.SpringViewProvider  : No SpringViews found
+2018-01-30 16:21:18.695  INFO 18440 --- [http-nio-8090-exec-5] com.examplecrud.demo.aop.LogerAspect     : start method: List com.examplecrud.demo.service.DocumentService.findAll() arguments: [Ljava.lang.Object;@36b67025
+2018-01-30 16:21:22.424  INFO 18440 --- [http-nio-8090-exec-2] com.examplecrud.demo.aop.LogerAspect     : start method: Document com.examplecrud.demo.service.DocumentService.read(UUID) arguments: [Ljava.lang.Object;@48d876fb
+2018-01-30 16:21:30.970  INFO 18440 --- [http-nio-8090-exec-3] com.examplecrud.demo.aop.LogerAspect     : start method: Document com.examplecrud.demo.service.DocumentService.read(UUID) arguments: [Ljava.lang.Object;@6c34e7e6
+2018-01-30 16:22:12.022  INFO 18440 --- [Thread-9] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@55f3b52: startup date [Tue Jan 30 16:21:01 SAMT 2018]; root of context hierarchy
+2018-01-30 16:22:12.027  INFO 18440 --- [Thread-9] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-01-30 16:22:15.816  INFO 18579 --- [restartedMain] com.examplecrud.demo.DemoApplication     : Starting DemoApplication on SMRPC00891 with PID 18579 (started by fedor in /home/fedor/Документы/Altarix/crud)
+2018-01-30 16:22:15.818  INFO 18579 --- [restartedMain] com.examplecrud.demo.DemoApplication     : No active profile set, falling back to default profiles: default
+2018-01-30 16:22:15.938  INFO 18579 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3ec0bd16: startup date [Tue Jan 30 16:22:15 SAMT 2018]; root of context hierarchy
+2018-01-30 16:22:16.822  WARN 18579 --- [restartedMain] o.s.c.a.ConfigurationClassPostProcessor  : Cannot enhance @Configuration bean definition 'com.vaadin.spring.VaadinConfiguration' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+2018-01-30 16:22:17.115  INFO 18579 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9b948100] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-30 16:22:17.690  INFO 18579 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8090 (http)
+2018-01-30 16:22:17.701  INFO 18579 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-01-30 16:22:17.702  INFO 18579 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-01-30 16:22:17.767  INFO 18579 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-01-30 16:22:17.767  INFO 18579 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1831 ms
+2018-01-30 16:22:17.940  INFO 18579 --- [localhost-startStop-1] c.v.s.b.i.VaadinServletConfiguration     : Registering Vaadin servlet
+2018-01-30 16:22:17.940  INFO 18579 --- [localhost-startStop-1] c.v.s.b.i.VaadinServletConfiguration     : Servlet will be mapped to URLs [/vaadinServlet/*, /VAADIN/*]
+2018-01-30 16:22:17.977  INFO 18579 --- [localhost-startStop-1] c.v.s.b.i.VaadinServletConfiguration     : Setting servlet init parameters
+2018-01-30 16:22:17.978  INFO 18579 --- [localhost-startStop-1] c.v.s.b.i.VaadinServletConfiguration     : Set servlet init parameter [productionMode] = [false]
+2018-01-30 16:22:17.978  INFO 18579 --- [localhost-startStop-1] c.v.s.b.i.VaadinServletConfiguration     : Set servlet init parameter [resourceCacheTime] = [3600]
+2018-01-30 16:22:17.978  INFO 18579 --- [localhost-startStop-1] c.v.s.b.i.VaadinServletConfiguration     : Set servlet init parameter [heartbeatInterval] = [300]
+2018-01-30 16:22:17.978  INFO 18579 --- [localhost-startStop-1] c.v.s.b.i.VaadinServletConfiguration     : Set servlet init parameter [closeIdleSessions] = [false]
+2018-01-30 16:22:18.022  INFO 18579 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-30 16:22:18.024  INFO 18579 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'springVaadinServlet' to [/vaadinServlet/*, /VAADIN/*]
+2018-01-30 16:22:18.026  INFO 18579 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-30 16:22:18.027  INFO 18579 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-30 16:22:18.027  INFO 18579 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-30 16:22:18.027  INFO 18579 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-30 16:22:18.371  WARN 18579 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Cannot deserialize session attribute [com.vaadin.server.VaadinSession.springVaadinServlet] for session [BD4674A01E3D9FC0308BAAF8F623CD86]
+2018-01-30 16:22:19.400  INFO 18579 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3ec0bd16: startup date [Tue Jan 30 16:22:15 SAMT 2018]; root of context hierarchy
+2018-01-30 16:22:19.477  INFO 18579 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/documents],methods=[GET]}" onto public java.util.List<com.examplecrud.demo.entity.Document> com.examplecrud.demo.controller.DocumentController.getAll()
+2018-01-30 16:22:19.478  INFO 18579 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/documents],methods=[PUT]}" onto public com.examplecrud.demo.entity.Document com.examplecrud.demo.controller.DocumentController.update(java.lang.String)
+2018-01-30 16:22:19.479  INFO 18579 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/documents/{id}],methods=[GET]}" onto public com.examplecrud.demo.entity.Document com.examplecrud.demo.controller.DocumentController.read(java.lang.String)
+2018-01-30 16:22:19.479  INFO 18579 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/documents/{id}],methods=[DELETE]}" onto public java.util.UUID com.examplecrud.demo.controller.DocumentController.delete(java.lang.String)
+2018-01-30 16:22:19.480  INFO 18579 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/documents],methods=[POST],consumes=[application/json]}" onto public com.examplecrud.demo.entity.Document com.examplecrud.demo.controller.DocumentController.create(java.lang.String)
+2018-01-30 16:22:19.482  INFO 18579 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-30 16:22:19.482  INFO 18579 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-30 16:22:19.533  INFO 18579 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-30 16:22:19.534  INFO 18579 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-30 16:22:19.572  INFO 18579 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-30 16:22:19.602  INFO 18579 --- [restartedMain] c.v.s.b.i.VaadinServletConfiguration     : Checking the application context for Vaadin UI mappings
+2018-01-30 16:22:19.604  INFO 18579 --- [restartedMain] c.v.s.b.i.VaadinServletConfiguration     : Registering Vaadin servlet of type [com.vaadin.spring.server.SpringVaadinServlet]
+2018-01-30 16:22:19.611  INFO 18579 --- [restartedMain] c.v.s.b.i.VaadinServletConfiguration     : Forwarding @SpringUI URLs from {/=org.springframework.web.servlet.mvc.ServletForwardingController@7657b2f7}
+2018-01-30 16:22:19.612  INFO 18579 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Root mapping to handler of type [class org.springframework.web.servlet.mvc.ServletForwardingController]
+2018-01-30 16:22:19.887  INFO 18579 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-01-30 16:22:19.950  INFO 18579 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-01-30 16:22:20.006  INFO 18579 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8090 (http)
+2018-01-30 16:22:20.011  INFO 18579 --- [restartedMain] com.examplecrud.demo.DemoApplication     : Started DemoApplication in 4.515 seconds (JVM running for 4.898)
+2018-01-30 16:22:25.623  INFO 18579 --- [http-nio-8090-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-01-30 16:22:25.623  WARN 18579 --- [http-nio-8090-exec-1] c.v.s.DefaultDeploymentConfiguration     : 
+=================================================================
+Vaadin is running in DEBUG MODE.
+Add productionMode=true to web.xml to disable debug features.
+To show debug window, add ?debug to your application URL.
+=================================================================
+2018-01-30 16:22:25.624  INFO 18579 --- [http-nio-8090-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-01-30 16:22:25.674  INFO 18579 --- [http-nio-8090-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 50 ms
+2018-01-30 16:22:25.698  INFO 18579 --- [http-nio-8090-exec-2] c.vaadin.spring.server.SpringUIProvider  : Checking the application context for Vaadin UIs
+2018-01-30 16:22:25.700  INFO 18579 --- [http-nio-8090-exec-2] c.vaadin.spring.server.SpringUIProvider  : Found Vaadin UI [com.examplecrud.demo.ui.VaadinUI]
+2018-01-30 16:22:26.104  INFO 18579 --- [http-nio-8090-exec-4] c.v.spring.navigator.SpringViewProvider  : Looking up SpringViews
+2018-01-30 16:22:26.106  WARN 18579 --- [http-nio-8090-exec-4] c.v.spring.navigator.SpringViewProvider  : No SpringViews found
+2018-01-30 16:22:26.144 ERROR 18579 --- [http-nio-8090-exec-4] com.vaadin.server.DefaultErrorHandler    : 
+
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at com.examplecrud.demo.aop.LogerAspect.logExecutionTime(LogerAspect.java:20) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_161]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_161]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_161]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_161]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:629) ~[spring-aop-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:611) ~[spring-aop-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.aop.aspectj.AspectJMethodBeforeAdvice.before(AspectJMethodBeforeAdvice.java:43) ~[spring-aop-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:51) ~[spring-aop-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:168) ~[spring-aop-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92) ~[spring-aop-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:673) ~[spring-aop-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at com.examplecrud.demo.service.DocumentService$$EnhancerBySpringCGLIB$$dcf74de2.findAll(<generated>) ~[classes/:na]
+	at com.examplecrud.demo.ui.VaadinUI.listDocuments(VaadinUI.java:68) ~[classes/:na]
+	at com.examplecrud.demo.ui.VaadinUI.init(VaadinUI.java:63) ~[classes/:na]
+	at com.vaadin.ui.UI.doInit(UI.java:738) ~[vaadin-server-8.0.0.jar:8.0.0]
+	at com.vaadin.server.communication.UIInitHandler.getBrowserDetailsUI(UIInitHandler.java:214) ~[vaadin-server-8.0.0.jar:8.0.0]
+	at com.vaadin.server.communication.UIInitHandler.synchronizedHandleRequest(UIInitHandler.java:74) ~[vaadin-server-8.0.0.jar:8.0.0]
+	at com.vaadin.server.SynchronizedRequestHandler.handleRequest(SynchronizedRequestHandler.java:41) ~[vaadin-server-8.0.0.jar:8.0.0]
+	at com.vaadin.server.VaadinService.handleRequest(VaadinService.java:1464) ~[vaadin-server-8.0.0.jar:8.0.0]
+	at com.vaadin.server.VaadinServlet.service(VaadinServlet.java:380) [vaadin-server-8.0.0.jar:8.0.0]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:728) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:467) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:351) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:311) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.servlet.mvc.ServletForwardingController.handleRequestInternal(ServletForwardingController.java:133) [spring-webmvc-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.web.servlet.mvc.AbstractController.handleRequest(AbstractController.java:174) [spring-webmvc-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter.handle(SimpleControllerHandlerAdapter.java:50) [spring-webmvc-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967) [spring-webmvc-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901) [spring-webmvc-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) [spring-webmvc-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872) [spring-webmvc-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) [spring-webmvc-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) [tomcat-embed-websocket-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) [spring-web-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:108) [spring-web-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81) [spring-web-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) [spring-web-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_161]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_161]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_161]
+
+2018-01-30 16:22:26.146 ERROR 18579 --- [http-nio-8090-exec-4] o.a.c.c.C.[.[.[/].[springVaadinServlet]  : Servlet.service() for servlet [springVaadinServlet] threw exception
+
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at com.examplecrud.demo.aop.LogerAspect.logExecutionTime(LogerAspect.java:20) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_161]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_161]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_161]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_161]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:629) ~[spring-aop-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:611) ~[spring-aop-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.aop.aspectj.AspectJMethodBeforeAdvice.before(AspectJMethodBeforeAdvice.java:43) ~[spring-aop-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:51) ~[spring-aop-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:168) ~[spring-aop-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92) ~[spring-aop-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:673) ~[spring-aop-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at com.examplecrud.demo.service.DocumentService$$EnhancerBySpringCGLIB$$dcf74de2.findAll(<generated>) ~[classes/:na]
+	at com.examplecrud.demo.ui.VaadinUI.listDocuments(VaadinUI.java:68) ~[classes/:na]
+	at com.examplecrud.demo.ui.VaadinUI.init(VaadinUI.java:63) ~[classes/:na]
+	at com.vaadin.ui.UI.doInit(UI.java:738) ~[vaadin-server-8.0.0.jar:8.0.0]
+	at com.vaadin.server.communication.UIInitHandler.getBrowserDetailsUI(UIInitHandler.java:214) ~[vaadin-server-8.0.0.jar:8.0.0]
+	at com.vaadin.server.communication.UIInitHandler.synchronizedHandleRequest(UIInitHandler.java:74) ~[vaadin-server-8.0.0.jar:8.0.0]
+	at com.vaadin.server.SynchronizedRequestHandler.handleRequest(SynchronizedRequestHandler.java:41) ~[vaadin-server-8.0.0.jar:8.0.0]
+	at com.vaadin.server.VaadinService.handleRequest(VaadinService.java:1464) ~[vaadin-server-8.0.0.jar:8.0.0]
+	at com.vaadin.server.VaadinServlet.service(VaadinServlet.java:380) ~[vaadin-server-8.0.0.jar:8.0.0]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:728) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:467) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:351) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:311) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.servlet.mvc.ServletForwardingController.handleRequestInternal(ServletForwardingController.java:133) [spring-webmvc-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.web.servlet.mvc.AbstractController.handleRequest(AbstractController.java:174) [spring-webmvc-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter.handle(SimpleControllerHandlerAdapter.java:50) [spring-webmvc-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967) [spring-webmvc-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901) [spring-webmvc-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) [spring-webmvc-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872) [spring-webmvc-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) [spring-webmvc-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) [tomcat-embed-websocket-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) [spring-web-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:108) [spring-web-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81) [spring-web-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) [spring-web-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_161]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_161]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_161]
+
+2018-01-30 16:22:26.148 ERROR 18579 --- [http-nio-8090-exec-4] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [com.vaadin.server.ServiceException: java.lang.ArrayIndexOutOfBoundsException: 0] with root cause
+
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at com.examplecrud.demo.aop.LogerAspect.logExecutionTime(LogerAspect.java:20) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_161]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_161]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_161]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_161]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:629) ~[spring-aop-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:611) ~[spring-aop-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.aop.aspectj.AspectJMethodBeforeAdvice.before(AspectJMethodBeforeAdvice.java:43) ~[spring-aop-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:51) ~[spring-aop-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:168) ~[spring-aop-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92) ~[spring-aop-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:673) ~[spring-aop-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at com.examplecrud.demo.service.DocumentService$$EnhancerBySpringCGLIB$$dcf74de2.findAll(<generated>) ~[classes/:na]
+	at com.examplecrud.demo.ui.VaadinUI.listDocuments(VaadinUI.java:68) ~[classes/:na]
+	at com.examplecrud.demo.ui.VaadinUI.init(VaadinUI.java:63) ~[classes/:na]
+	at com.vaadin.ui.UI.doInit(UI.java:738) ~[vaadin-server-8.0.0.jar:8.0.0]
+	at com.vaadin.server.communication.UIInitHandler.getBrowserDetailsUI(UIInitHandler.java:214) ~[vaadin-server-8.0.0.jar:8.0.0]
+	at com.vaadin.server.communication.UIInitHandler.synchronizedHandleRequest(UIInitHandler.java:74) ~[vaadin-server-8.0.0.jar:8.0.0]
+	at com.vaadin.server.SynchronizedRequestHandler.handleRequest(SynchronizedRequestHandler.java:41) ~[vaadin-server-8.0.0.jar:8.0.0]
+	at com.vaadin.server.VaadinService.handleRequest(VaadinService.java:1464) ~[vaadin-server-8.0.0.jar:8.0.0]
+	at com.vaadin.server.VaadinServlet.service(VaadinServlet.java:380) ~[vaadin-server-8.0.0.jar:8.0.0]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:728) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:467) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:351) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:311) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.servlet.mvc.ServletForwardingController.handleRequestInternal(ServletForwardingController.java:133) ~[spring-webmvc-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.web.servlet.mvc.AbstractController.handleRequest(AbstractController.java:174) ~[spring-webmvc-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter.handle(SimpleControllerHandlerAdapter.java:50) ~[spring-webmvc-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967) ~[spring-webmvc-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901) ~[spring-webmvc-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) ~[spring-webmvc-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872) ~[spring-webmvc-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) ~[spring-webmvc-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:108) ~[spring-web-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81) ~[spring-web-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) ~[spring-web-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_161]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_161]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_161]
+
+2018-01-30 16:22:43.376  INFO 18579 --- [Thread-9] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3ec0bd16: startup date [Tue Jan 30 16:22:15 SAMT 2018]; root of context hierarchy
+2018-01-30 16:22:43.383  INFO 18579 --- [Thread-9] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-01-30 16:22:46.541  INFO 18674 --- [restartedMain] com.examplecrud.demo.DemoApplication     : Starting DemoApplication on SMRPC00891 with PID 18674 (started by fedor in /home/fedor/Документы/Altarix/crud)
+2018-01-30 16:22:46.542  INFO 18674 --- [restartedMain] com.examplecrud.demo.DemoApplication     : No active profile set, falling back to default profiles: default
+2018-01-30 16:22:46.664  INFO 18674 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@664656bf: startup date [Tue Jan 30 16:22:46 SAMT 2018]; root of context hierarchy
+2018-01-30 16:22:47.513  WARN 18674 --- [restartedMain] o.s.c.a.ConfigurationClassPostProcessor  : Cannot enhance @Configuration bean definition 'com.vaadin.spring.VaadinConfiguration' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+2018-01-30 16:22:47.813  INFO 18674 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ff783252] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-30 16:22:48.409  INFO 18674 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8090 (http)
+2018-01-30 16:22:48.420  INFO 18674 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-01-30 16:22:48.420  INFO 18674 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-01-30 16:22:48.482  INFO 18674 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-01-30 16:22:48.483  INFO 18674 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1826 ms
+2018-01-30 16:22:48.673  INFO 18674 --- [localhost-startStop-1] c.v.s.b.i.VaadinServletConfiguration     : Registering Vaadin servlet
+2018-01-30 16:22:48.673  INFO 18674 --- [localhost-startStop-1] c.v.s.b.i.VaadinServletConfiguration     : Servlet will be mapped to URLs [/vaadinServlet/*, /VAADIN/*]
+2018-01-30 16:22:48.714  INFO 18674 --- [localhost-startStop-1] c.v.s.b.i.VaadinServletConfiguration     : Setting servlet init parameters
+2018-01-30 16:22:48.715  INFO 18674 --- [localhost-startStop-1] c.v.s.b.i.VaadinServletConfiguration     : Set servlet init parameter [productionMode] = [false]
+2018-01-30 16:22:48.715  INFO 18674 --- [localhost-startStop-1] c.v.s.b.i.VaadinServletConfiguration     : Set servlet init parameter [resourceCacheTime] = [3600]
+2018-01-30 16:22:48.715  INFO 18674 --- [localhost-startStop-1] c.v.s.b.i.VaadinServletConfiguration     : Set servlet init parameter [heartbeatInterval] = [300]
+2018-01-30 16:22:48.715  INFO 18674 --- [localhost-startStop-1] c.v.s.b.i.VaadinServletConfiguration     : Set servlet init parameter [closeIdleSessions] = [false]
+2018-01-30 16:22:48.766  INFO 18674 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-30 16:22:48.768  INFO 18674 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'springVaadinServlet' to [/vaadinServlet/*, /VAADIN/*]
+2018-01-30 16:22:48.770  INFO 18674 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-30 16:22:48.771  INFO 18674 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-30 16:22:48.771  INFO 18674 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-30 16:22:48.771  INFO 18674 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-30 16:22:49.971  INFO 18674 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@664656bf: startup date [Tue Jan 30 16:22:46 SAMT 2018]; root of context hierarchy
+2018-01-30 16:22:50.054  INFO 18674 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/documents],methods=[GET]}" onto public java.util.List<com.examplecrud.demo.entity.Document> com.examplecrud.demo.controller.DocumentController.getAll()
+2018-01-30 16:22:50.055  INFO 18674 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/documents],methods=[PUT]}" onto public com.examplecrud.demo.entity.Document com.examplecrud.demo.controller.DocumentController.update(java.lang.String)
+2018-01-30 16:22:50.056  INFO 18674 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/documents/{id}],methods=[GET]}" onto public com.examplecrud.demo.entity.Document com.examplecrud.demo.controller.DocumentController.read(java.lang.String)
+2018-01-30 16:22:50.056  INFO 18674 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/documents/{id}],methods=[DELETE]}" onto public java.util.UUID com.examplecrud.demo.controller.DocumentController.delete(java.lang.String)
+2018-01-30 16:22:50.057  INFO 18674 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/documents],methods=[POST],consumes=[application/json]}" onto public com.examplecrud.demo.entity.Document com.examplecrud.demo.controller.DocumentController.create(java.lang.String)
+2018-01-30 16:22:50.059  INFO 18674 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-30 16:22:50.059  INFO 18674 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-30 16:22:50.121  INFO 18674 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-30 16:22:50.121  INFO 18674 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-30 16:22:50.167  INFO 18674 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-30 16:22:50.205  INFO 18674 --- [restartedMain] c.v.s.b.i.VaadinServletConfiguration     : Checking the application context for Vaadin UI mappings
+2018-01-30 16:22:50.208  INFO 18674 --- [restartedMain] c.v.s.b.i.VaadinServletConfiguration     : Registering Vaadin servlet of type [com.vaadin.spring.server.SpringVaadinServlet]
+2018-01-30 16:22:50.215  INFO 18674 --- [restartedMain] c.v.s.b.i.VaadinServletConfiguration     : Forwarding @SpringUI URLs from {/=org.springframework.web.servlet.mvc.ServletForwardingController@1be48f0}
+2018-01-30 16:22:50.216  INFO 18674 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Root mapping to handler of type [class org.springframework.web.servlet.mvc.ServletForwardingController]
+2018-01-30 16:22:50.537  INFO 18674 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-01-30 16:22:50.606  INFO 18674 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-01-30 16:22:50.657  INFO 18674 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8090 (http)
+2018-01-30 16:22:50.664  INFO 18674 --- [restartedMain] com.examplecrud.demo.DemoApplication     : Started DemoApplication in 4.467 seconds (JVM running for 4.878)
+2018-01-30 16:22:55.232  INFO 18674 --- [http-nio-8090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-01-30 16:22:55.232  INFO 18674 --- [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-01-30 16:22:55.248  INFO 18674 --- [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 16 ms
+2018-01-30 16:22:55.266  WARN 18674 --- [http-nio-8090-exec-1] c.v.s.DefaultDeploymentConfiguration     : 
+=================================================================
+Vaadin is running in DEBUG MODE.
+Add productionMode=true to web.xml to disable debug features.
+To show debug window, add ?debug to your application URL.
+=================================================================
+2018-01-30 16:22:55.751  INFO 18674 --- [http-nio-8090-exec-3] c.v.spring.navigator.SpringViewProvider  : Looking up SpringViews
+2018-01-30 16:22:55.753  WARN 18674 --- [http-nio-8090-exec-3] c.v.spring.navigator.SpringViewProvider  : No SpringViews found
+2018-01-30 16:22:55.790  INFO 18674 --- [http-nio-8090-exec-3] com.examplecrud.demo.aop.LogerAspect     : start method: List com.examplecrud.demo.service.DocumentService.findAll() arguments: [Ljava.lang.Object;@22b0ecb7
+2018-01-30 16:22:57.568  INFO 18674 --- [http-nio-8090-exec-6] com.examplecrud.demo.aop.LogerAspect     : start method: Document com.examplecrud.demo.service.DocumentService.read(UUID) arguments: [Ljava.lang.Object;@25c9fbeb
+2018-01-30 16:22:58.085  INFO 18674 --- [http-nio-8090-exec-7] com.examplecrud.demo.aop.LogerAspect     : start method: Document com.examplecrud.demo.service.DocumentService.read(UUID) arguments: [Ljava.lang.Object;@74aef643
+2018-01-30 16:24:46.535  INFO 18674 --- [Thread-9] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@664656bf: startup date [Tue Jan 30 16:22:46 SAMT 2018]; root of context hierarchy
+2018-01-30 16:24:46.541  INFO 18674 --- [Thread-9] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-01-30 16:24:53.725  INFO 18898 --- [restartedMain] com.examplecrud.demo.DemoApplication     : Starting DemoApplication on SMRPC00891 with PID 18898 (started by fedor in /home/fedor/Документы/Altarix/crud)
+2018-01-30 16:24:53.727  INFO 18898 --- [restartedMain] com.examplecrud.demo.DemoApplication     : No active profile set, falling back to default profiles: default
+2018-01-30 16:24:53.870  INFO 18898 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@55f3b52: startup date [Tue Jan 30 16:24:53 SAMT 2018]; root of context hierarchy
+2018-01-30 16:24:54.991  WARN 18898 --- [restartedMain] o.s.c.a.ConfigurationClassPostProcessor  : Cannot enhance @Configuration bean definition 'com.vaadin.spring.VaadinConfiguration' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+2018-01-30 16:24:55.290  INFO 18898 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$3bf568a8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-30 16:24:56.040  INFO 18898 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8090 (http)
+2018-01-30 16:24:56.065  INFO 18898 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-01-30 16:24:56.066  INFO 18898 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-01-30 16:24:56.160  INFO 18898 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-01-30 16:24:56.161  INFO 18898 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2301 ms
+2018-01-30 16:24:56.354  INFO 18898 --- [localhost-startStop-1] c.v.s.b.i.VaadinServletConfiguration     : Registering Vaadin servlet
+2018-01-30 16:24:56.354  INFO 18898 --- [localhost-startStop-1] c.v.s.b.i.VaadinServletConfiguration     : Servlet will be mapped to URLs [/vaadinServlet/*, /VAADIN/*]
+2018-01-30 16:24:56.398  INFO 18898 --- [localhost-startStop-1] c.v.s.b.i.VaadinServletConfiguration     : Setting servlet init parameters
+2018-01-30 16:24:56.399  INFO 18898 --- [localhost-startStop-1] c.v.s.b.i.VaadinServletConfiguration     : Set servlet init parameter [productionMode] = [false]
+2018-01-30 16:24:56.399  INFO 18898 --- [localhost-startStop-1] c.v.s.b.i.VaadinServletConfiguration     : Set servlet init parameter [resourceCacheTime] = [3600]
+2018-01-30 16:24:56.399  INFO 18898 --- [localhost-startStop-1] c.v.s.b.i.VaadinServletConfiguration     : Set servlet init parameter [heartbeatInterval] = [300]
+2018-01-30 16:24:56.400  INFO 18898 --- [localhost-startStop-1] c.v.s.b.i.VaadinServletConfiguration     : Set servlet init parameter [closeIdleSessions] = [false]
+2018-01-30 16:24:56.455  INFO 18898 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-30 16:24:56.456  INFO 18898 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'springVaadinServlet' to [/vaadinServlet/*, /VAADIN/*]
+2018-01-30 16:24:56.459  INFO 18898 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-30 16:24:56.459  INFO 18898 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-30 16:24:56.459  INFO 18898 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-30 16:24:56.460  INFO 18898 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-30 16:24:56.587  WARN 18898 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Cannot deserialize session attribute [com.vaadin.server.VaadinSession.springVaadinServlet] for session [BD4674A01E3D9FC0308BAAF8F623CD86]
+2018-01-30 16:24:57.615  INFO 18898 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@55f3b52: startup date [Tue Jan 30 16:24:53 SAMT 2018]; root of context hierarchy
+2018-01-30 16:24:57.735  INFO 18898 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/documents],methods=[GET]}" onto public java.util.List<com.examplecrud.demo.entity.Document> com.examplecrud.demo.controller.DocumentController.getAll()
+2018-01-30 16:24:57.737  INFO 18898 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/documents],methods=[PUT]}" onto public com.examplecrud.demo.entity.Document com.examplecrud.demo.controller.DocumentController.update(java.lang.String)
+2018-01-30 16:24:57.737  INFO 18898 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/documents/{id}],methods=[GET]}" onto public com.examplecrud.demo.entity.Document com.examplecrud.demo.controller.DocumentController.read(java.lang.String)
+2018-01-30 16:24:57.737  INFO 18898 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/documents/{id}],methods=[DELETE]}" onto public java.util.UUID com.examplecrud.demo.controller.DocumentController.delete(java.lang.String)
+2018-01-30 16:24:57.738  INFO 18898 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/documents],methods=[POST],consumes=[application/json]}" onto public com.examplecrud.demo.entity.Document com.examplecrud.demo.controller.DocumentController.create(java.lang.String)
+2018-01-30 16:24:57.743  INFO 18898 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-30 16:24:57.744  INFO 18898 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-30 16:24:57.812  INFO 18898 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-30 16:24:57.813  INFO 18898 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-30 16:24:57.858  INFO 18898 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-30 16:24:57.898  INFO 18898 --- [restartedMain] c.v.s.b.i.VaadinServletConfiguration     : Checking the application context for Vaadin UI mappings
+2018-01-30 16:24:57.900  INFO 18898 --- [restartedMain] c.v.s.b.i.VaadinServletConfiguration     : Registering Vaadin servlet of type [com.vaadin.spring.server.SpringVaadinServlet]
+2018-01-30 16:24:57.906  INFO 18898 --- [restartedMain] c.v.s.b.i.VaadinServletConfiguration     : Forwarding @SpringUI URLs from {/=org.springframework.web.servlet.mvc.ServletForwardingController@4dc69153}
+2018-01-30 16:24:57.907  INFO 18898 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Root mapping to handler of type [class org.springframework.web.servlet.mvc.ServletForwardingController]
+2018-01-30 16:24:58.263  INFO 18898 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-01-30 16:24:58.325  INFO 18898 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-01-30 16:24:58.395  INFO 18898 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8090 (http)
+2018-01-30 16:24:58.401  INFO 18898 --- [restartedMain] com.examplecrud.demo.DemoApplication     : Started DemoApplication in 5.004 seconds (JVM running for 5.426)
+2018-01-30 16:25:00.204  INFO 18898 --- [http-nio-8090-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-01-30 16:25:00.204  INFO 18898 --- [http-nio-8090-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-01-30 16:25:00.205  WARN 18898 --- [http-nio-8090-exec-1] c.v.s.DefaultDeploymentConfiguration     : 
+=================================================================
+Vaadin is running in DEBUG MODE.
+Add productionMode=true to web.xml to disable debug features.
+To show debug window, add ?debug to your application URL.
+=================================================================
+2018-01-30 16:25:00.227  INFO 18898 --- [http-nio-8090-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 22 ms
+2018-01-30 16:25:00.254  INFO 18898 --- [http-nio-8090-exec-2] c.vaadin.spring.server.SpringUIProvider  : Checking the application context for Vaadin UIs
+2018-01-30 16:25:00.262  INFO 18898 --- [http-nio-8090-exec-2] c.vaadin.spring.server.SpringUIProvider  : Found Vaadin UI [com.examplecrud.demo.ui.VaadinUI]
+2018-01-30 16:25:00.722  INFO 18898 --- [http-nio-8090-exec-3] c.v.spring.navigator.SpringViewProvider  : Looking up SpringViews
+2018-01-30 16:25:00.724  WARN 18898 --- [http-nio-8090-exec-3] c.v.spring.navigator.SpringViewProvider  : No SpringViews found
+2018-01-30 16:25:00.768  INFO 18898 --- [http-nio-8090-exec-3] com.examplecrud.demo.aop.LogerAspect     : start method: List com.examplecrud.demo.service.DocumentService.findAll() arguments: []
+2018-01-30 16:25:04.165  INFO 18898 --- [http-nio-8090-exec-6] com.examplecrud.demo.aop.LogerAspect     : start method: Document com.examplecrud.demo.service.DocumentService.read(UUID) arguments: [7a9b676a-9ce8-e8f0-c08e-426910b5a647]
+2018-01-30 16:25:10.098  INFO 18898 --- [http-nio-8090-exec-8] com.examplecrud.demo.aop.LogerAspect     : start method: Document com.examplecrud.demo.service.DocumentService.read(UUID) arguments: [f54b64c4-d5f2-4549-be3c-587a32ba8d2a]
+2018-01-30 16:25:11.130  INFO 18898 --- [http-nio-8090-exec-4] com.examplecrud.demo.aop.LogerAspect     : start method: Document com.examplecrud.demo.service.DocumentService.read(UUID) arguments: [5de0f877-ecbc-404c-96ca-228f9caa6021]
+2018-01-30 16:25:15.376  INFO 18898 --- [http-nio-8090-exec-3] com.examplecrud.demo.aop.LogerAspect     : start method: Document com.examplecrud.demo.service.DocumentService.read(UUID) arguments: [7a9b676a-9ce8-e8f0-c08e-426910b5a647]
+2018-01-30 16:25:16.526  INFO 18898 --- [http-nio-8090-exec-5] com.examplecrud.demo.aop.LogerAspect     : start method: void com.examplecrud.demo.service.DocumentService.delete(UUID) arguments: [7a9b676a-9ce8-e8f0-c08e-426910b5a647]
+2018-01-30 16:25:16.531  INFO 18898 --- [http-nio-8090-exec-5] com.examplecrud.demo.aop.LogerAspect     : start method: List com.examplecrud.demo.service.DocumentService.findAll() arguments: []
+2018-01-30 16:25:27.355  INFO 18898 --- [http-nio-8090-exec-2] com.examplecrud.demo.aop.LogerAspect     : start method: Document com.examplecrud.demo.service.DocumentService.read(UUID) arguments: [f54b64c4-d5f2-4549-be3c-587a32ba8d2a]
+2018-01-30 16:25:28.875  INFO 18898 --- [http-nio-8090-exec-1] com.examplecrud.demo.aop.LogerAspect     : start method: void com.examplecrud.demo.service.DocumentService.delete(UUID) arguments: [f54b64c4-d5f2-4549-be3c-587a32ba8d2a]
+2018-01-30 16:25:28.881  INFO 18898 --- [http-nio-8090-exec-1] com.examplecrud.demo.aop.LogerAspect     : start method: List com.examplecrud.demo.service.DocumentService.findAll() arguments: []
+2018-01-30 16:25:39.703  INFO 18898 --- [http-nio-8090-exec-6] com.examplecrud.demo.aop.LogerAspect     : start method: Document com.examplecrud.demo.service.DocumentService.save(Document) arguments: [Document{id=null, name='sfew', code='wefgrwe', description='erg', docKind=null}]
+2018-01-30 16:25:39.710  INFO 18898 --- [http-nio-8090-exec-6] com.examplecrud.demo.aop.LogerAspect     : start method: List com.examplecrud.demo.service.DocumentService.findAll() arguments: []
+2018-01-30 16:26:01.455  INFO 18898 --- [http-nio-8090-exec-8] com.examplecrud.demo.aop.LogerAspect     : start method: Document com.examplecrud.demo.service.DocumentService.read(UUID) arguments: [f4588584-996a-4891-b235-e5cc42268e20]
+2018-01-30 16:26:02.230  INFO 18898 --- [http-nio-8090-exec-2] com.examplecrud.demo.aop.LogerAspect     : start method: Document com.examplecrud.demo.service.DocumentService.read(UUID) arguments: [5de0f877-ecbc-404c-96ca-228f9caa6021]
