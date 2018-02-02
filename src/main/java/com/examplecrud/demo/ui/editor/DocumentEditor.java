@@ -1,15 +1,13 @@
 package com.examplecrud.demo.ui.editor;
 
+import com.examplecrud.demo.DemoApplication;
 import com.examplecrud.demo.entity.Document;
 import com.examplecrud.demo.service.DocumentService;
 import com.vaadin.data.Binder;
 import com.vaadin.event.ShortcutAction;
 import com.vaadin.spring.annotation.SpringComponent;
 import com.vaadin.spring.annotation.UIScope;
-import com.vaadin.ui.Button;
-import com.vaadin.ui.CssLayout;
-import com.vaadin.ui.TextField;
-import com.vaadin.ui.VerticalLayout;
+import com.vaadin.ui.*;
 import com.vaadin.ui.themes.ValoTheme;
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -26,6 +24,8 @@ public class DocumentEditor extends VerticalLayout{
     private TextField code = new TextField("Code");
     private TextField description = new TextField("Description");
 
+    private CheckBox saveInThesischeckBox = new CheckBox("Save in Tezis application");
+
     private Button saveButton = new Button("Save");
     private Button cancelButton = new Button("Cancel");
     private Button deleteButton = new Button("Delete");
@@ -38,7 +38,7 @@ public class DocumentEditor extends VerticalLayout{
     public DocumentEditor(DocumentService documentService){
         this.documentService = documentService;
 
-        addComponents(name,code,description,actions);
+        addComponents(name,code,description,saveInThesischeckBox,actions);
 
         binder.bindInstanceFields(this);
 
@@ -50,6 +50,10 @@ public class DocumentEditor extends VerticalLayout{
         saveButton.addClickListener(e -> documentService.save(document));
         deleteButton.addClickListener(e -> documentService.delete(document.getId()));
         cancelButton.addClickListener(e -> editDocument(document));
+
+        saveInThesischeckBox.addValueChangeListener(e -> DemoApplication.saveThesis = e.getValue());
+        saveInThesischeckBox.setValue(DemoApplication.saveThesis);
+
         setVisible(false);
     }
 

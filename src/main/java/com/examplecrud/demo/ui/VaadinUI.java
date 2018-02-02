@@ -2,6 +2,7 @@ package com.examplecrud.demo.ui;
 
 import com.examplecrud.demo.entity.Document;
 import com.examplecrud.demo.service.DocumentService;
+import com.examplecrud.demo.service.UserService;
 import com.examplecrud.demo.ui.editor.DocumentEditor;
 import com.vaadin.annotations.Theme;
 import com.vaadin.server.VaadinRequest;
@@ -12,7 +13,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.util.StringUtils;
 
 
-@SpringUI
+@SpringUI(path = "/")
 @Theme("valo")
 public class VaadinUI extends UI{
 

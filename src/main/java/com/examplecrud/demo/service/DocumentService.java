@@ -1,11 +1,14 @@
 package com.examplecrud.demo.service;
 
 
+import com.examplecrud.demo.DemoApplication;
 import com.examplecrud.demo.aop.annotation.LogExecutionTime;
 import com.examplecrud.demo.entity.Document;
 import com.examplecrud.demo.mapper.DocumentMapper;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.autoconfigure.web.ServerProperties;
+import org.springframework.context.ApplicationContext;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -13,10 +16,12 @@ import java.util.UUID;
 
 @Service
 public class DocumentService {
+
     @Autowired
     private DocumentMapper documentMapper;
-//    @Autowired
-//    private TezisService tezisService;
+
+    @Autowired
+    ApplicationContext applicationContext;
 
     @LogExecutionTime
     public List<Document> findAll(){
@@ -25,11 +30,14 @@ public class DocumentService {
 
     @LogExecutionTime
     public Document create(Document document){
-//        try {
-//            document = tezisService.create(document);
-//        } catch (JsonProcessingException e) {
-//            e.printStackTrace();
-//        }
+        if(DemoApplication.saveThesis) {
+            try {
+                TezisService tezisService = applicationContext.getBean(TezisService.class);
+                document = tezisService.create(document);
+            } catch (JsonProcessingException e) {
+                e.printStackTrace();
+            }
+        }
         document.setId(UUID.randomUUID());
         documentMapper.create(document.getId(),document.getName(),document.getCode(),document.getDescription());
         return document;
